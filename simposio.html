@@ -6,9 +6,10 @@
 		<meta name="description" content="simpósio">
 		<meta name="keywords" content="simpósio, IFNMG, Januária">
 		<meta name="author" content="Grupo 3">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
 			body{
-				    background-color: #006400;
+				    background-color: ;
 				    width: 80%;
 					margin: auto;
 					
@@ -19,9 +20,9 @@
 	               grid-template-columns: 2fr 1fr; 
 	               grid-template-rows: 1fr;
 				   background-color: rgba(255,255,255,0.3);
-				   padding: 15px;
-				   margin-bottom: 15px;
-				   border-radius: 10px;
+				   padding: 25px;
+				   margin-bottom: 20px;
+				   border-radius: 15px;
                 }
                 	
 			#coluna1{
@@ -49,8 +50,8 @@
 
 
 			#links_principais a:hover {
-					background-color:rgba(32,178,170, 0.4);
-					color: #6D6D6D;
+					background-color:#00bfff;
+					color: #FFFAFA;
 					border-bottom: 1px solid black; 
 	
 				}
@@ -64,25 +65,54 @@
 					opacity: 1.0;
 					transform: scale(1.3);
    
-				}			
-			#rodape{
-				width: 100%; height: 50px;	
 				}
-			.footer{
-				position:absolute;
-				bottom:0;
-				
-				}
+            #topo{
+                width: 100%; /*largura*/
+                height: 120px; /*altura*/
+                text-align: center; /*alinhamento do texto*/
+                 /*clear: both;não permite elementos flutuantes ao lado*/
+                background-color: #006400; /*cor de fundo*/
+            }
+            #links_principais{
+                height: 50px; /*altura*/
+                text-align: center; /*alinhamento do texto*/
+                padding: 10px; /*espaço entre a borda e o conteúdo do elemento*/
+                background-color:#00bfff; /*cor de fundo*/
+            }
+		
+           	
+			
+
+           
+            #grid_container{
+                padding: 0px; /*espaço entre a borda e o conteúdo do elemento*/
+                width: 100%; /*largura*/
+                /*float:left;define que o elemento deve flutuar à esquerda*/
+                background-color: ; /*cor de fundo*/
+               }			
+		#rodape{
+                clear: both; /*não permite elementos flutuantes ao lado*/
+                text-align: center; /*alinhamento do texto*/
+                padding: 0px; /*espaço entre a borda e o conteúdo do elemento*/
+                background-color: 	#00bfff; /*cor de fundo*/
+            }
+		#logo{
+	                 position: absolute; 
+	                 left: 148px; /* posiciona a 90px para a esquerda */ 
+	                 top: 0px; /* posiciona a 70px para baixo */
+	}
+	
 		</style>
 		
 	</head>
 	<body>
+	<img src="images/logo.png" width="120px" height="120px" alt="Simpósio Januária" title="Simpósio Januária" id="logo">
 		 <nav id="links_principais">
       <ul>
 		
         <li><a href="#"><img src="images/home.png" width="30px" height="30px"> Home </a>  </li>
-        <li><a href="eventos_anteriores/eventos.html"> <img src="images/World.png" width="30px" height="30px"> Eventos Anteriores </a></li>
-        <li><a href="contatos/contatos.html"> <img src="images/contatos.png" width="30px" height="30px"> Contatos </a></li>
+        <li><a href="eventos_anteriores/eventos.html" target="_blank"> <img src="images/World.png" width="30px" height="30px"> Eventos Anteriores </a></li>
+        <li><a href="https://site112.com/tabela-cores-html" target="_blank"> <img src="images/contatos.png" width="30px" height="30px"> Contatos </a></li>
                
       </ul>
          </nav>
@@ -94,12 +124,14 @@
 	
 		<main>
 		
-			<header>
-				<img src="images/logo.png"  height="100px" alt="Simpósio Januária" title="Simpósio Januária">
+			<header >
+				
 				<h1>Simpósio em informática do IFNMG - Campus Januária </h1>				
 			</header>
 		<div id="grid_container">
+		
 		<div id="coluna1">
+		
 		<article>  
 			<header>
 				<h2>O que é o Simpósio? </h2>			
@@ -107,21 +139,28 @@
 			 <p> O Simpósio é um evento realizado anualmente pelo corpo docente e discente dos cursos de informática da referida instituição.
 			     O evento reúne professores, estudantes e profissionais da região norte mineira para discutir temas atuais, compartilhar experiências, 
 			     disseminar novos conhecimentos e permitir a interação  entre todos os participantes. A cada ano é escolhido um tema como eixo de discussão,
- 			     abrangendo também outros tópicos de interesse pertinentes à área de informática. O evento conta com uma gama de atividades: palestras, apresentação
-				 de trabalhos científicos, minicursos, maratona de programação, quiztech, feira de projetos, jogos, competições e confraternização.</p>
+ 			     abrangendo também outros tópicos de interesse pertinentes à área de informática. </p>
 
-		</article>		
+		</article>
+		<article>  
+			<header>
+				<h2>Minicursos </h2>			
+	   		 </header>
+			 <p> Os mesmos capacitam alunos, professores e a comunidade, visando contribuir no crescimento profissional, para que o mercado de trabalho não fique escasso no quesito 
+                 profissionais qualificados, são diversos cursos com cargas horaria bem tranquilas, não perca essa opurtunidade de melhorar na area em que atua ou encontrar 
+				 uma nova, faça sua inscrição.
+			 </p>
+           <img src="images/php.png" width="100px" height="100px">
+		   <img src="images/java.png" width="100px" height="100px">
+		   <img src="images/html.png" width="100px" height="100px">
+		</article>
 		</div>
-		</div>
-		<div class="footer">
-			<footer>
-      		 	<small>&copy; 2018, Simpósio IFNMG </small>
-     				Todas as marcas e marcas registradas que aparecem neste site pertencem aos respectivos proprietários.
-    		</footer>		
-		</div>
-		
+		</div>			
 		</main>	
 		
+         <footer id="rodape">
+               <h4>&copy; Copyright 2018, Todos os direitos reservados</h4>
+         </footer>
 
 	</body>
 	</html>
